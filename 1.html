@@ -15,7 +15,7 @@
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.css">
-<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/rainbow.min.css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
 <link rel="stylesheet" type="text/css" href="./css/highlight.init.css">
 <link rel="stylesheet" type="text/css" href="./css/loader.css">
 <link rel="stylesheet" type="text/css" href="./css/common.css">
@@ -36,12 +36,6 @@
 	<nav class="navbar navbar-expand-lg nav-costom">
 		<button class="menu-toggle" type="button">MENU</button>
 		<a class="navbar-brand navbar-brand-flex-left" href="./" style="color: #000;">明月の開発ストーリ</a>
-		<div class="collapse navbar-collapse navbar-collapse-flex-100" id="navbarSupportedContent">
-			<div class="form-inline my-2 my-lg-0 search-custom">
-				<input class="form-control mr-sm-2 search-text" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
-			</div>
-		</div>
 	</nav>
 	<aside class="leftside">
 		<h5 class="side-header">
@@ -62,7 +56,7 @@
 			<button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
 		</div>
 		<div class="side-list">
-			<ul class="side-nav"><li class=""><a class="link_item link-item-collapse" href="javascript:void(0)">Dev<span class="fa fa-chevron-down pull-right"></span></a><ul class="sub_category_list off"><li class=""><a class="link_sub_item" href="java.html">Java</a></li><li class=""><a class="link_sub_item" href="Csharp.html">C#</a></li></ul></li><li class=""><a class="link_item link-item-collapse" href="other.html">Other</a></li><li class=""><a class="link_item link-item-collapse" href="javascript:void(0)">Study<span class="fa fa-chevron-down pull-right"></span></a><ul class="sub_category_list off"><li class=""><a class="link_sub_item" href="php.html">php</a></li><li class=""><a class="link_sub_item" href="python.html">python</a></li></ul></li>
+			<ul class="side-nav"><li class=""><a class="link_item link-item-collapse category-item" href="javascript:void(0)">Dev<span class="fa fa-chevron-down pull-right"></span></a><ul class="sub_category_list off"><li class=""><a class="link_sub_item category-item" data-code="0101" href="./?category=0101">Java</a></li><li class=""><a class="link_sub_item category-item" data-code="0102" href="./?category=0102">C#</a></li></ul></li><li class=""><a class="link_item link-item-collapse category-item" data-code="9900" href="./?category=9900">Other</a></li><li class=""><a class="link_item link-item-collapse category-item" href="javascript:void(0)">Study<span class="fa fa-chevron-down pull-right"></span></a><ul class="sub_category_list off"><li class=""><a class="link_sub_item category-item" data-code="0201" href="./?category=0201">php</a></li><li class=""><a class="link_sub_item category-item" data-code="0202" href="./?category=0202">python</a></li></ul></li>
 			</ul>
 		</div>
 	</aside>
@@ -97,5 +91,9 @@
 	<div id="ImgModal" class="modal">
 		<span class="close img-type">&times;</span> <img class="modal-content">
 	</div>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script src="./js/highlightjs-line-numbers.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script>hljs.initLineNumbersOnLoad();</script>
 </body>
 </html>
